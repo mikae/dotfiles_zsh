@@ -11,7 +11,6 @@ done
 CONFIG_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 CONFIG_ZSHRC=$CONFIG_DIR/.zshrc
 
-ZSH_CONFIG_SOURCE=https://github.com/anriw/dotfiles_zsh
 TMP_SOURCE=/tmp/zsh_install
 
 install_oh_my_zsh() {
