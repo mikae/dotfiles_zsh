@@ -1,2 +1,1 @@
-# dotfiles_zsh
-My zsh configuration files.
+Nothing is here.
