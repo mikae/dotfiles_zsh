@@ -6,17 +6,17 @@ export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 export CONFIG_DIR=$HOME/.zsh
 export PLUGIN_DIR=$HOME/.zsh/plugins
-export OH_MY_ZSH_HOME=/home/nitori/.oh-my-zsh
+export OH_MY_ZSH_HOME=/home/yui/.oh-my-zsh
 export ZSH=$OH_MY_ZSH_HOME
 
 export LANG=en_US.UTF-8
 
 export PAGER=/usr/local/bin/vimpager
 
-PATH="/home/nitori/.cask/bin:$PATH"
+PATH="/home/yui/.cask/bin:$PATH"
 PATH="/usr/sbin:$PATH"
 PATH="/usr/lib/lua/luarocks/bin:$PATH"
-PATH="/home/nitori/.nodejs/bin:$PATH"
+PATH="/home/yui/.nodejs/bin:$PATH"
 export PATH
 
 export MPD_HOST=127.0.0.1
