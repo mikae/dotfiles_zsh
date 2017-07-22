@@ -15,7 +15,10 @@ source $DIR_CONFIG/plugin_list.zsh
 
 # Install plugins
 if ! zplug check --verbose; then
-    zplug install
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
 fi
 
 # Load plugins
