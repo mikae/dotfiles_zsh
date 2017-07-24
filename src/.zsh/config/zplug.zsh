@@ -1,5 +1,5 @@
 # zplug environment variables
-ZPLUG_HOME=$DIR_CONFIG/.zplug
+ZPLUG_HOME=$DIR_ZSH/.zplug
 ZPLUG_CACHE_DIR=$ZPLUG_HOME/.cache
 ZPLUG_BIN=$ZPLUG_HOME/bin
 ZPLUG_LOADFILE=$ZPLUG_HOME/packages.zsh
@@ -23,7 +23,7 @@ if ! zplug check --verbose; then
 fi
 
 # Load plugins
-zplug load --verbose
+zplug load
 
 # Configure plugins
 source $DIR_CONFIG/plugin_config.zsh

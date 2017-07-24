@@ -11,6 +11,9 @@ zplug "junegunn/fzf", as:command, use:bin/fzf-tmux
 # Valiev/almostontop
 zplug 'Valiev/almostontop'
 
+# zsh-users/zsh-autosuggestions
+zplug "zsh-users/zsh-autosuggestions"
+
 # zsh-users/zsh-syntax-highlighting
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search", defer:2, on:"zsh-users/zsh-syntax-highlighting"
