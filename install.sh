@@ -16,6 +16,8 @@ CLEAN=false
 INSTALL=false
 INSTALL_PLUGINS=false
 
+SOURCE_FZF=https://github.com/junegunn/fzf
+
 while [[ $# -gt 0 ]]
 do
     key="$1"
@@ -57,6 +59,6 @@ if $INSTALL_PLUGINS; then
 fi
 
 if $INSTALL; then
-    cp -v  $CONFIG_DIR/.zshrc ~
-    cp -Rv $CONFIG_DIR/.zsh ~
+    cp -v  $CONFIG_DIR/src/.zshrc ~
+    cp -Rv $CONFIG_DIR/src/.zsh ~
 fi
