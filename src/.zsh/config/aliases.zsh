@@ -6,5 +6,10 @@ alias  l='ls -la'
 alias ffn.='find . -type f -name'
 alias ffd.='find . -type d -name'
 
+# vim/nvim
+alias vim='nvim'
+alias vi='nvim'
+
+# Almostontop
 alias aot='almostontop toggle'
 # TODO: disable almostontop

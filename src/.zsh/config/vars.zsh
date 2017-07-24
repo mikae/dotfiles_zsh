@@ -6,3 +6,6 @@ setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed
 setopt SHARE_HISTORY             # Share history between all sessions.
 setopt HIST_REDUCE_BLANKS        # Remove superfluous blanks before recording entry.
 setopt HIST_VERIFY               # Don't execute immediately upon history expansion.
+
+# vim
+EDITOR=nvim
