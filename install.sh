@@ -60,5 +60,6 @@ fi
 
 if $INSTALL; then
     cp -v  $CONFIG_DIR/src/.zshrc ~
+    cp -v  $CONFIG_DIR/src/.zshenv ~
     cp -Rv $CONFIG_DIR/src/.zsh ~
 fi

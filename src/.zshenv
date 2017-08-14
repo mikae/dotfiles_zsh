@@ -1,0 +1,8 @@
+# Main
+PATH_LOCAL_DATA=$HOME/.local-data
+
+# Paths
+PATH_VIRTUALENVS=$PATH_LOCAL_DATA/.virtualenvs
+
+export PATH_VIRTUALENVS
+export PATH_EXECUTABLE_AG

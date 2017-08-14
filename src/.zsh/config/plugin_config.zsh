@@ -20,6 +20,9 @@ if zplug check djui/alias-tips; then
 
     # Force alias usage
     export ZSH_PLUGINS_ALIAS_TIPS_FORCE=1
+
+    # Exclude some tips
+    export ZSH_PLUGINS_ALIAS_TIPS_EXCLUDES="vi vim nvim"
 fi
 
 # zsh-users/zsh-autosuggestions;
