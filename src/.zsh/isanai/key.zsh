@@ -1,4 +1,4 @@
-    # bindkey -v
+# bindkey -v
 
 # bindkey -M vicmd 'n' vi-backward-char
 # bindkey -M vicmd 'e' vi-forward-word-end
@@ -13,3 +13,9 @@
 # bindkey -D viopp
 # bindkey -D visual
 # bindkey -D main
+
+isanai_default_key () {
+    echo "tottt-to-do this :3"
+}
+
+isanai_add_key_task isanai_default_key

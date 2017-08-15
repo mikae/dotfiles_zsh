@@ -1,6 +1,12 @@
-source $ISANAI_TASK_FILE
+source $ISANAI_HOME/task.zsh
 
-source $ISANAI_ZPLUG_FILE
-source $ISANAI_ALIAS_FILE
-source $ISANAI_SETTINGS_FILE
-source $ISANAI_KEY_FILE
+source $ISANAI_HOME/settings.zsh
+source $ISANAI_HOME/zplug.zsh
+source $ISANAI_HOME/key.zsh
+source $ISANAI_HOME/aliases.zsh
+
+for plugin_config in $ISANAI_HOME/plugin/*.zsh; do
+    source $plugin_config
+done
+
+isanai_execute_all
