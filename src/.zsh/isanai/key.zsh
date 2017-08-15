@@ -1,4 +1,4 @@
-# bindkey -v
+    # bindkey -v
 
 # bindkey -M vicmd 'n' vi-backward-char
 # bindkey -M vicmd 'e' vi-forward-word-end
