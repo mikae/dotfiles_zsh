@@ -28,9 +28,6 @@ do
         --install)
             INSTALL=true
             ;;
-        --install-plugins)
-            INSTALL_PLUGINS=true
-            ;;
         --all)
             CLEAN=true
             INSTALL=true
@@ -52,13 +49,10 @@ if $CLEAN; then
     rm -rfv ~/.zsh
 fi
 
-[ ! -d ~/.zsh ] && mkdir ~/.zsh
-
-if $INSTALL_PLUGINS; then
-    [ ! -d ~/.zsh/.zplug ] && git clone https://github.com/zplug/zplug ~/.zsh/.zplug
-fi
+[ ! -d ~/.zsh/.conf ] && mkdir -p ~/.zsh/.conf
 
 if $INSTALL; then
+    [ ! -d ~/.zsh/.conf/.zplug ] && git clone https://github.com/zplug/zplug ~/.zsh/.conf/.zplug
     cp -v  $CONFIG_DIR/src/.zshrc ~
     cp -v  $CONFIG_DIR/src/.zshenv ~
     cp -Rv $CONFIG_DIR/src/.zsh ~

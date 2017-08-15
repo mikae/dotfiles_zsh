@@ -19,8 +19,9 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "zsh-users/zsh-history-substring-search", on:"zsh-users/zsh-syntax-highlighting"
 
 # Theme
-zplug "lib/theme-and-appearance", from:oh-my-zsh
-zplug "themes/dallas", from:oh-my-zsh
+#zplug "lib/theme-and-appearance", from:oh-my-zsh
+# zplug "themes/dallas", from:oh-my-zsh
+zplug 'dracula/zsh', as:theme
 
 # TODOs:
 # mollifier/anyframe

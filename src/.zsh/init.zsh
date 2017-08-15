@@ -1,7 +1,6 @@
-DIR_ZSH=~/.zsh
-DIR_CONFIG=$DIR_ZSH/config
+source $ISANAI_TASK_FILE
 
-source $DIR_CONFIG/funcs.zsh
-source $DIR_CONFIG/zplug.zsh
-source $DIR_CONFIG/aliases.zsh
-source $DIR_CONFIG/vars.zsh
+source $ISANAI_ZPLUG_FILE
+source $ISANAI_ALIAS_FILE
+source $ISANAI_SETTINGS_FILE
+source $ISANAI_KEY_FILE

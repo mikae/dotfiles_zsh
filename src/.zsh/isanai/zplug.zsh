@@ -1,5 +1,6 @@
 # zplug environment variables
-ZPLUG_HOME=$DIR_ZSH/.zplug
+ZPLUG_HOME=$ISANAI_CONF/.zplug
+
 ZPLUG_CACHE_DIR=$ZPLUG_HOME/.cache
 ZPLUG_BIN=$ZPLUG_HOME/bin
 ZPLUG_LOADFILE=$ZPLUG_HOME/packages.zsh
@@ -12,7 +13,7 @@ ZPLUG_USE_CACHE=true
 source $ZPLUG_HOME/init.zsh
 
 # Load plugin list
-source $DIR_CONFIG/plugin_list.zsh
+source $ISANAI_PLUGIN_LIST_FILE
 
 # Install plugins
 if ! zplug check --verbose; then
@@ -26,4 +27,6 @@ fi
 zplug load
 
 # Configure plugins
-source $DIR_CONFIG/plugin_config.zsh
+for plugin_config in $ISANAI_PLUGIN_CONFIG_DIR/*.zsh; do
+    source $plugin_config
+done
