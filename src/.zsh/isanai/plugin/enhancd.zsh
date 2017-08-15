@@ -2,7 +2,7 @@ isanai_enhancd_settings () {
     # b4b4r07/enhancd
     if zplug check b4b4r07/enhancd; then
         # enhancd dir
-        export ENHANCD_DIR=$ISANAI_CONF/.enhancd
+        export ENHANCD_DIR=$ISANAI_DATA/.enhancd
         [ ! -d $ENHANCD_DIR ] && mkdir $ENHANCD_DIR
 
         # Use only home
