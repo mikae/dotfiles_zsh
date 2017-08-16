@@ -59,7 +59,7 @@ isanai_main_keymap () {
 isanai_viins_keymap () {
     isanai_setup_movements viins
 
-    bindkey -M viins '^,^n' vi-cmd-mode
+    bindkey -M viins '^n^n' vi-cmd-mode
 }
 
 
