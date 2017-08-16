@@ -37,8 +37,8 @@ isanai_setup_movements () {
 
     #neio
     bindkey -M $1 '^[n' vi-backward-char
-    bindkey -M $1 '^[e' vi-down-line-or-hostory
-    bindkey -M $1 '^[i' vi-up-line-or-hostory
+    bindkey -M $1 '^[e' vi-down-line-or-history
+    bindkey -M $1 '^[i' vi-up-line-or-history
     bindkey -M $1 '^[o' vi-forward-char
 
     bindkey -M $1 '^[N' vi-beginning-of-line

@@ -1,6 +1,6 @@
 isanai_default_settings () {
     # History
-    HISTFILE="$DIR_ZSH/.zsh_history"
+    HISTFILE=$ISANAI_TMP/.zsh_history
     HISTSIZE=10000000
     SAVEHIST=10000000
     setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
