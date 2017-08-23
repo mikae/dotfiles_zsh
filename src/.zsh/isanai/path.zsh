@@ -1,4 +1,5 @@
 # Isanai paths
+PATH="$PATH:$HOME/.cask/bin"
 ISANAI_HOME=~/.zsh/isanai
 ISANAI_DATA=~/.zsh/.conf
 ISANAI_TMP=~/.zsh/.tmp
