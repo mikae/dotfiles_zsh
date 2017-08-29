@@ -10,3 +10,5 @@ for plugin_config in $ISANAI_HOME/plugin/*.zsh; do
 done
 
 isanai_execute_all
+
+[ -f "$HOME/.nvm/nvm.sh" ] && source $HOME/.nvm/nvm.sh
