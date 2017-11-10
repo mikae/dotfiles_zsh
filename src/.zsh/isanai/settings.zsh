@@ -12,4 +12,9 @@ isanai_default_settings () {
     EDITOR=nvim
 }
 
+isanai_configure_path () {
+    PATH="$PATH_CABAL/bin:$PATH"
+}
+
+isanai_add_settings_task isanai_configure_path
 isanai_add_settings_task isanai_default_settings
