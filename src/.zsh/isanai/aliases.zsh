@@ -4,8 +4,8 @@ isanai_default_aliases () {
     alias  l='ls -la'
 
     # vim/nvim
-    alias vim='nvim'
-    alias vi='nvim'
+    alias vim='vim'
+    alias vi='vim'
 
     # Almostontop
     alias aot='almostontop toggle'
