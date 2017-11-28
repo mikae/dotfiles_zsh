@@ -3,8 +3,9 @@ PATH_LOCAL_DATA=$HOME/.local-data
 
 # Paths
 PATH_VIRTUALENVS=$PATH_LOCAL_DATA/.virtualenvs
-PATH_CABAL=$HOME/.cabal
 export PATH_VIRTUALENVS
+
+PATH_CABAL=$HOME/.cabal
 export PATH_CABAL
 
 # mpd
