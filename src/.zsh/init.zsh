@@ -12,3 +12,6 @@ done
 isanai_execute_all
 
 [ -f "$HOME/.nvm/nvm.sh" ] && source $HOME/.nvm/nvm.sh
+if hash neofetch 2>/dev/null; then
+    neofetch "~/.config/neofetch/config"
+fi
