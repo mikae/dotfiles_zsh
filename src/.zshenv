@@ -15,3 +15,7 @@ MPD_PASSWORD=""
 export MPD_HOST
 export MPD_PORT
 export MPD_PASSWORD
+
+# Editor
+EDITOR=vim
+export EDITOR

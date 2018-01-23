@@ -1,3 +1,11 @@
+isanai_export_path_variables () {
+    ISANAI_NVM_PATH=$HOME/.nvm/nvm.sh
+    ISANAI_VENVWRAPPER_PATH=$HOME/.local/bin/virtualenvwrapper.sh
+
+    export ISANAI_NVM_PATH
+    export ISANAI_VENVWRAPPER_PATH
+}
+
 isanai_default_settings () {
     # History
     HISTFILE=$ISANAI_TMP/.zsh_history
@@ -12,9 +20,10 @@ isanai_default_settings () {
     EDITOR=nvim
 }
 
-isanai_configure_path () {
+isanai_configure_PATH () {
     PATH="$PATH_CABAL/bin:$PATH"
 }
 
-isanai_add_settings_task isanai_configure_path
+isanai_add_settings_task isanai_export_path_variables
+isanai_add_settings_task isanai_configure_PATH
 isanai_add_settings_task isanai_default_settings

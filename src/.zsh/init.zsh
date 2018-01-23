@@ -11,7 +11,12 @@ done
 
 isanai_execute_all
 
-[ -f "$HOME/.nvm/nvm.sh" ] && source $HOME/.nvm/nvm.sh
+# nvm
+[ -f "$NVM_PATH" ] && source $NVM_PATH
+
+# virtualenvwrapper
+[ -f "$VENVWRAPPER_PATH" ] && source $VENVWRAPPER_PATH
+
 if hash neofetch 2>/dev/null; then
     neofetch "~/.config/neofetch/config"
 fi
