@@ -1,17 +1,4 @@
-
-isanai_use_vi_keymap () {
-    # bindkey -D command
-    # bindkey -D emacs
-    # bindkey -D isearch
-    # bindkey -D vicmd
-    # bindkey -D viins
-    # bindkey -D viopp
-    # bindkey -D visual
-    # bindkey -D main
-    bindkey -v
-}
-
-isanai_setup_movements () {
+isanai_key_setup_movements () {
     bindkey -M $1 '^[1' vi-find-next-char
     bindkey -M $1 '^[@' vi-find-next-char
 
@@ -49,22 +36,34 @@ isanai_setup_movements () {
     bindkey -M $1 '^M'   accept-line
 }
 
-isanai_main_keymap () {
+isanai_key_use_vi () {
+    # bindkey -D command
+    # bindkey -D emacs
+    # bindkey -D isearch
+    # bindkey -D vicmd
+    # bindkey -D viins
+    # bindkey -D viopp
+    # bindkey -D visual
+    # bindkey -D main
+    bindkey -v
+}
+
+isanai_key_main_keymap () {
     bindkey -M main -r '^[OA'
     bindkey -M main -r '^[OB'
     bindkey -M main -r '^[OC'
     bindkey -M main -r '^[OD'
 }
 
-isanai_viins_keymap () {
-    isanai_setup_movements viins
+isanai_key_viins_keymap () {
+    isanai_key_setup_movements viins
 
     bindkey -M viins ',^N' vi-cmd-mode
 }
 
 
-isanai_vicmd_keymap () {
-    isanai_setup_movements vicmd
+isanai_key_vicmd_keymap () {
+    isanai_key_setup_movements vicmd
 
     #digits
     bindkey -M vicmd '1' digit-argument
@@ -114,7 +113,12 @@ isanai_vicmd_keymap () {
     bindkey -M vicmd '>' vi-redo
 }
 
-isanai_add_key_task isanai_use_vi_keymap
-isanai_add_key_task isanai_main_keymap
-isanai_add_key_task isanai_viins_keymap
-isanai_add_key_task isanai_vicmd_keymap
+isanai_key_clean () {
+    unfunction isanai_key_setup_movements
+    unfunction isanai_key_clean
+}
+
+isanai_add_key_task isanai_key_use_vi
+isanai_add_key_task isanai_key_main_keymap
+isanai_add_key_task isanai_key_viins_keymap
+isanai_add_key_task isanai_key_vicmd_keymap

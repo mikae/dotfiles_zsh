@@ -1,4 +1,4 @@
-isanai_default_aliases () {
+isanai_aliases_default () {
     # General
     alias cl='clear'
     alias  l='ls -la'
@@ -12,4 +12,4 @@ isanai_default_aliases () {
     # TODO: disable almostontop
 }
 
-isanai_add_alias_task isanai_default_aliases
+isanai_add_alias_task isanai_aliases_default

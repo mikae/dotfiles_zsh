@@ -1,22 +1,14 @@
 source $ISANAI_HOME/task.zsh
 
 source $ISANAI_HOME/settings.zsh
+source $ISANAI_HOME/functions.zsh
 source $ISANAI_HOME/zplug.zsh
 source $ISANAI_HOME/key.zsh
 source $ISANAI_HOME/aliases.zsh
+source $ISANAI_HOME/post.zsh
 
 for plugin_config in $ISANAI_HOME/plugin/*.zsh; do
     source $plugin_config
 done
 
-isanai_execute_all
-
-# nvm
-[ -f "$NVM_PATH" ] && source $NVM_PATH
-
-# virtualenvwrapper
-[ -f "$VENVWRAPPER_PATH" ] && source $VENVWRAPPER_PATH
-
-if hash neofetch 2>/dev/null; then
-    neofetch "~/.config/neofetch/config"
-fi
+isanai_task_execute_all

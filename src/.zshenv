@@ -1,21 +1,14 @@
-# Main
-PATH_LOCAL_DATA=$HOME/.local-data
-
-# Paths
-PATH_VIRTUALENVS=$PATH_LOCAL_DATA/.virtualenvs
-export PATH_VIRTUALENVS
-
-PATH_CABAL=$HOME/.cabal
-export PATH_CABAL
+#
+export LOCAL_DATA_PATH=$HOME/.local-data
 
 # mpd
-MPD_HOST="localhost"
-MPD_PORT="7701"
-MPD_PASSWORD=""
-export MPD_HOST
-export MPD_PORT
-export MPD_PASSWORD
+export MPD_HOST="localhost"
+export MPD_PORT="7701"
+export MPD_PASSWORD=""
 
-# Editor
-EDITOR=vim
-export EDITOR
+# editor
+export EDITOR=vim
+
+# venv
+export WORKON_HOME=$LOCAL_DATA_PATH/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python
